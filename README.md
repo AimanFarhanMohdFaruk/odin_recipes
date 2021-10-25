@@ -1,0 +1,1 @@
+Opening project to Odin recipes. Started on 25h October 2021. Going through Odin Project as a refresher to return to software development by 2H2022. 
