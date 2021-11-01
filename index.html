@@ -21,6 +21,32 @@
     </ul>
 
     <script>
+
+        function add7(number){
+            console.log(number + 7)
+        }
+
+        function lastLetter(a){
+            console.log(a.substr(-1))
+        }
+        
+        let answer = parseInt(prompt("Please enter the number you would to FizzBuzz up to:"))
+
+        for(let i = 1; i<= answer; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("FizzBuzz");
+            } else if (i % 3 === 0){
+                console.log("Fizz");
+            } else if (i % 5 === 0){
+                console.log("Buzz");
+            } else {
+                console.log(i)
+            }
+        }
+        
+
+        let a = 10
+        console.log(a)
         console.log("Hello world again!")
     </script>
 
