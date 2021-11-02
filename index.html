@@ -30,7 +30,7 @@
             console.log(a.substr(-1))
         }
         
-        let answer = parseInt(prompt("Please enter the number you would to FizzBuzz up to:"))
+         /** let answer = parseInt(prompt("Please enter the number you would to FizzBuzz up to:"))
 
         for(let i = 1; i<= answer; i++) {
             if (i % 3 === 0 && i % 5 === 0) {
@@ -42,8 +42,30 @@
             } else {
                 console.log(i)
             }
+        } **/
+
+        let computerPlay = () => {
+            options = ["rock","paper","scissors"]
+            return options[Math.floor(Math.random()*options.length)]
         }
+
+        let playerSelection = prompt("please choose: rock, scissors, or paper").toLowerCase();
+
         
+        
+        let playRound = (playerSelection, computerSelection) => {
+            let computerSelection = computerPlay().toLowerCase();
+            if (playerSelection == computerSelection){
+                return "tie game";
+            } else if (computerSelection == '') {
+            }
+        }
+
+        let game = () => {
+            for (let i=1; i < 5; i++){
+                playRound()
+            }
+        }
 
         let a = 10
         console.log(a)
