@@ -4,7 +4,9 @@ const content = document.createElement('div');
 const para = document.createElement('p');
 const heading3 = document.createElement('h3');
 const newDiv = document.createElement('div')
+const btn = document.querySelector("#btn");
 
+btn.onclick = () => alert("Hello world!")
 
 content.classList.add('content');
 content.textContent = 'This is the glorious text-content!';
@@ -21,6 +23,7 @@ newDiv.innerHTML =
 <h1>I'm in a div</h1>
 <p> ME TOO!</p>
 `
+
 
 
 container.appendChild(content);
