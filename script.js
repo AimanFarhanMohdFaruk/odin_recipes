@@ -6,7 +6,14 @@ const heading3 = document.createElement('h3');
 const newDiv = document.createElement('div')
 const btn = document.querySelector("#btn");
 
-btn.onclick = () => alert("Hello world!")
+btn.addEventListener ("click", (e) => {
+    e.target.style.background = 'blue';
+    testFunc();
+});
+
+const testFunc = () => {
+    console.log("HelloWorld, I'm working!")
+}
 
 content.classList.add('content');
 content.textContent = 'This is the glorious text-content!';
