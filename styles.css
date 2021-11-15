@@ -1,6 +1,11 @@
 div {
-    color:white;
-    background-color: black;
+    color:black;
+    background-color: white;
+}
+
+div .heading {
+    color:black;
+    background-color: yellow;
 }
 
 .recipeName {
